@@ -1,0 +1,22 @@
+{
+  "name": "lencorp",
+  "version": "1.0.0",
+  "description": "landing page for lencorp",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/master.scss css/app.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edlla/LENCorp-repo.git"
+  },
+  "author": "Edlla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edlla/LENCorp-repo/issues"
+  },
+  "homepage": "https://github.com/edlla/LENCorp-repo#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

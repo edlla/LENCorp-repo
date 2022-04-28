@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col"] {
+    background-color: orangered;
+    float: left; }
+    .row [class^="col"]:not(:last-child) {
+      margin-right: 3rem; }
+  .row .col-25 {
+    width: calc( ( 100% - 3rem * 3 ) / 4); }
+  .row .col-33 {
+    width: calc( ( 100% - 3rem * 2 ) / 3); }
+  .row .col-50 {
+    width: calc( ( 100% - 3rem ) / 2); }
+  .row .col-66 {
+    width: calc( ( ( 100% - 3rem * 2 ) / 3 ) * 2 + 3rem); }
+  .row .col-75 {
+    width: calc( ( (100% - 3rem * 3 ) / 4 ) * 3 + ( 3rem * 2 )); }

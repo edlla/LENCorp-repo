@@ -1,0 +1,41 @@
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: $grid-gutter;
+    }
+
+    @include clearfix;
+
+    [class^="col"] {
+        background-color: orangered;
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $col-gap;
+        }
+    }
+
+    .col-25 {
+        width: calc( ( 100% - #{$col-gap} * 3 ) / 4 );
+    }
+
+    .col-33 {
+        width: calc( ( 100% - #{$col-gap} * 2 ) / 3 );
+    }
+
+    .col-50 {
+        width: calc( ( 100% - #{$col-gap} ) / 2 );
+    }    
+
+    .col-66 {
+        width: calc( ( ( 100% - #{$col-gap} * 2 ) / 3 ) * 2 + #{$col-gap} );
+    }
+
+    .col-75 {
+        width: calc( ( (100% - #{$col-gap} * 3 ) / 4 ) * 3 + ( #{$col-gap} * 2 ) );
+    }
+}
+
+// (100% - #{$col-gap} * 3) / 4
